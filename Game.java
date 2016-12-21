@@ -9,4 +9,8 @@ public class Game {
     mHits = "";
     mMisses = "";
   }
+  public boolean applyGuess(char letter) {
+    boolean isHit = mAnswer.indexOf(letter) >= 0;
+    
+  }
 }
