@@ -11,6 +11,11 @@ public class Game {
   }
   public boolean applyGuess(char letter) {
     boolean isHit = mAnswer.indexOf(letter) >= 0;
-    
+    if (isHit) {
+      mHits += letter;
+    } else {
+      mMisses += letter;
+    }
+    return isHit;
   }
 }
