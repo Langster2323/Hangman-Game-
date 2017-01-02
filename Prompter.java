@@ -1,3 +1,4 @@
+// This is a console based application...
 import java.io.Console;
 /* This prompter object will do all of the IO or
 input and output */
