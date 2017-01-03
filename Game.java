@@ -1,6 +1,7 @@
 // Has the answer to the puzzle...
 class Game {
   // Declared but no intialized
+  public static final int MAX_MISSES = 7;
   private String answer;
   private String hits;
   private String misses;
@@ -31,5 +32,5 @@ class Game {
     progress += display;
   }
   return progress;
-} 
+}
 }
