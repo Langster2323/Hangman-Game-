@@ -22,6 +22,11 @@ class Game {
     }
     return isHit;
   }
+
+  public int getRemainingTries() {
+    return MAX_MISSES - misses.length();
+  }
+
   public String getCurrentProgress() {
   String progress = "";
   for (char letter : answer.toCharArray()) {
