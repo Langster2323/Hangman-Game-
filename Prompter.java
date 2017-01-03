@@ -1,17 +1,20 @@
-// This is a console based application...
-import java.io.Console;
-/* This prompter object will do all of the IO or
-input and output */
-public class Prompter {
-  private Game mGame;
-  // Constructor...
+/* Scanner has a bunch of helper methods that help parse input, parse meaning read and what it means. */
+import java.util.Scanner;
+//This class will handle all of the IO, Input and Output...
+class Prompter {
+  // A private variable that's a instances of the game.
+  private Game game;
+
   public Prompter(Game game) {
-    mGame = game;
+    this.game = game;
   }
+
   public boolean promptForGuess() {
-     Console console = System.console();
-     String guessAsString = console.readLine("Enter a letter:  ");
-     char guess = guessAsString.charAt(0);
-     return mGame.applyGuess(guess);
-   }
+    Scanner scanner = new Scanner(System.in);
+    System.out.print("Enter a letter:  ");
+    String guessInput = scanner.nextLine();
+    char guess = guessInput.charAt(0);
+    return game.applyGuess(guess);
+  }
+
 }

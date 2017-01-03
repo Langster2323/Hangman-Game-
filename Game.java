@@ -1,27 +1,25 @@
-//Game state logic...
-public class Game {
-  // Declared here...
-  private String mAnswer;
-  private String mHits;
-  private String mMisses;
-  /* Forcing the creation of the game to provide an answer
-  so everytime it's created it provides an answer. */
+// Has the answer to the puzzle...
+class Game {
+  // Declared but no intialized
+  private String answer;
+  private String hits;
+  private String misses;
+  //Forcing the creation of the game by creating a constructor
   public Game(String answer) {
-    // Initialized here...
-    mAnswer = answer;
-    mHits = "";
-    mMisses = "";
+    //Now these variable names are initialized...
+    this.answer = answer;
+    hits = "";
+    misses = "";
   }
-  /* Adding a method that will allow the user to
-  apply a guess towards the puzzle */
+
   public boolean applyGuess(char letter) {
-    boolean isHit = mAnswer.indexOf(letter) >= 0;
-    // Updating our state...
+    boolean isHit = answer.indexOf(letter) != -1;
     if (isHit) {
-      mHits += letter;
+      hits += letter;
     } else {
-      mMisses += letter;
+      misses += letter;
     }
     return isHit;
   }
+
 }
