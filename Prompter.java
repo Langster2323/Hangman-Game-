@@ -23,7 +23,7 @@ class Prompter {
         isHit = game.applyGuess(guess);
         isAcceptable = true;
       } catch(IllegalArgumentException iae) {
-        System.out.printf("%s. Please try again. %n" iae.getMessage());
+        System.out.printf("%s. Please try again. %n", iae.getMessage());
       }
     } while(! isAcceptable);
     return isHit;
