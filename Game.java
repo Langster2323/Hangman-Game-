@@ -21,6 +21,7 @@ class Game {
      if (misses.indexOf(letter) != -1 || hits.indexOf(letter) != -1) {
       throw new IllegalArgumentException(letter + " has already been guessed");
     }
+    return letter;
   }
 
   public boolean applyGuess(char letter) {
