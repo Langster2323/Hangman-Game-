@@ -1,4 +1,5 @@
-/* Scanner has a bunch of helper methods that help parse input, parse meaning read and what it means. */
+/* Scanner has a bunch of helper methods that help parse input, parse meaning
+read and what it means. */
 import java.util.Scanner;
 //This class will handle all of the IO, Input and Output...
 class Prompter {
