@@ -1,4 +1,5 @@
-//Uses instances of the Prompter class and the Game class
+/*Uses instances of the Prompter class
+and the Game class*/
 public class Hangman {
 
   public static void main(String[] args) {
