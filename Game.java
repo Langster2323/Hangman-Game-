@@ -23,7 +23,7 @@ class Game {
     }
     return letter;
   }
-
+// Method signature...
   public boolean applyGuess(String letters) {
     if (letters.length() == 0) {
       throw new IllegalArgumentException("No letter found");
