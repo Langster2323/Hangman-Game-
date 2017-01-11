@@ -24,6 +24,13 @@ class Game {
     return letter;
   }
 
+  public boolean applyGuess(String letters) {
+    if (letters.length() == 0) {
+      throw new IllegalArgumentException("No letter found");
+    }
+    return applyGuess(letters.charAt(0));
+  }
+
   public boolean applyGuess(char letter) {
    letter = normalizeGuess(letter);
     boolean isHit = answer.indexOf(letter) != -1;
