@@ -57,4 +57,9 @@ class Game {
     }
     return progress;
   }
+
+  public boolean isWon() {
+    //This is method chaining...
+    return getCurrentProgress().indexOf('-') == -1;
+  }
 }
