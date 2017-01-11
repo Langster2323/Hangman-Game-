@@ -12,6 +12,10 @@ class Game {
     hits = "";
     misses = "";
   }
+
+  public String getAnswer() {
+    return answer;
+  }
   //To group common functionality...
   private char normalizeGuess(char letter) {
     if (! Character.isLetter(letter)) {

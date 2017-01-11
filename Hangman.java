@@ -6,9 +6,11 @@ public class Hangman {
     // Your incredible code goes here...
     Game game = new Game("treehouse");
     Prompter prompter = new Prompter(game);
-    while (game.getRemainingTries() > 0) {
+    //While both of these are true keep going...
+    while (game.getRemainingTries() > 0 && !game.isWon()) {
           prompter.displayProgress();
           prompter.promptForGuess();
     }
+    prompter.displayOutcome();
   }
 }
